@@ -9,7 +9,7 @@ export default function Home() {
     { title: "UPS Installation", desc: "Uninterrupted power supply setup & maintenance.", url: "https://www.youtube.com/shorts/0crTAfPJcUY?feature=share" },
   ];
 
-  const { quote, loading, error, fetchQuote } = useQuotes();
+  const { quote, loading, error, fetchNewQuote, fetchAllQuotes } = useQuotes();
 
   return (
     <div className="home">
@@ -21,7 +21,7 @@ export default function Home() {
 
         {/* Quote Section */}
         <div className="quote-section">
-          <button onClick={fetchQuote} disabled={loading}>
+          <button onClick={fetchNewQuote} disabled={loading}>
             {loading ? "Loading..." : "✨ Get a Quote"}
           </button>
 
