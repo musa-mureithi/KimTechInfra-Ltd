@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: kim co.ltd
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
