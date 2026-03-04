@@ -7,7 +7,7 @@ export default function useQuotes() {
   const [error, setError] = useState(null);
 
  
-  const BASE_URL = "http://127.0.0.1:8000";
+  const BASE_URL = "https://kimtechinfra-ltd-backend-1.onrender.com";
 
   
   const fetchNewQuote = async () => {
