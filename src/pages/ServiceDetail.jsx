@@ -11,7 +11,7 @@ export default function ServiceDetail() {
   const [error, setError] = useState(null);
   const [playVideo, setPlayVideo] = useState(false);
 
-  const BASE_URL = "http://127.0.0.1:8000";
+  const BASE_URL = "https://kimtechinfra-ltd-backend-1.onrender.com";
 
   const descriptions = {
     "Server Cabinets Installation":
